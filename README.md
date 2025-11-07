@@ -41,8 +41,8 @@ Jogo desenvolvido para a disciplina de **Programação Imperativa e Funcional** 
 
 - **Aline de Albuquerque Henriques**
 - **Eduardo Borges Cordeiro de Oliveira Carlos**
-- **Luiz Henrique Rocha Silva**
 - **Gabriel de Moraes Leal**
+- **Luiz Henrique Rocha Silva**
 - **Ricardo Severiano de Souza Filho**
 - **Sérgio Carvalho Massad Chousinho**
 
