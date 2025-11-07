@@ -50,5 +50,4 @@ Jogo desenvolvido para a disciplina de **Programação Imperativa e Funcional** 
 
 ### ©️ | Licença 
 
-Este projeto é de uso educacional e não possui fins comerciais.
-Todos os direitos reservados aos autores e à CESAR School.
+Todos os direitos reservados aos autores.
