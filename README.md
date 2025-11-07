@@ -40,12 +40,12 @@ Jogo desenvolvido para a disciplina de **Programação Imperativa e Funcional** 
 
 ## 👥 | Equipe
 
-- **Aline de Albuquerque Henriques**
-- **Eduardo Borges Cordeiro de Oliveira Carlos**
-- **Gabriel de Moraes Leal**
-- **Luiz Henrique Rocha Silva**
-- **Ricardo Severiano de Souza Filho**
-- **Sérgio Carvalho Massad Chousinho**
+- **Aline de Albuquerque Henriques** - @aline-henriques
+- **Eduardo Borges Cordeiro de Oliveira Carlos** - @Eduardo-Borges18
+- **Gabriel de Moraes Leal** - @Lealgbm
+- **Luiz Henrique Rocha Silva** - @Luizrocha0
+- **Ricardo Severiano de Souza Filho** - @byteric
+- **Sérgio Carvalho Massad Chousinho** - @sergiochou
 
 *** 
 
