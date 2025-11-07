@@ -4,7 +4,8 @@ Jogo desenvolvido para a disciplina de **Programação Imperativa e Funcional** 
 
 ### 📄 | Índice  
 1. [Sobre o Projeto](#-sobre-o-projeto)  
-2. [Características do Jogo](#-características-do-jogo)  
+2. [Características do Jogo](#-características-do-jogo)
+3. [Arquitetura do Código](#-arquitetura-do-codigo)
 4. [Como Jogar](#-como-jogar)
 5. [Requisitos Técnicos](#-requisitos-tecnicos)
 6. [Equipe](#-equipe)
