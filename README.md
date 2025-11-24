@@ -1,166 +1,105 @@
-# 🎮 | Lógica, Lógica e Mais Lógica
 
-Jogo em **C**, executado no terminal Linux (incluindo WSL), desenvolvido para reforçar habilidades de **raciocínio lógico**, **pensamento computacional** e **resolução de problemas**.
 
-O jogo utiliza a **biblioteca personalizada `cli-lib`**, que fornece ferramentas avançadas para manipulação do terminal, renderização de mapas, leitura não bloqueante de teclado, animações e interface ASCII.
+# 🎮 **Lógica, Lógica e Mais Lógica**
+
+Jogo em **C**, rodando no terminal Linux (incluindo WSL), criado para estimular **raciocínio lógico**, **pensamento computacional** e **resolução de problemas**.
+Utiliza a biblioteca personalizada **`cli-lib`** para renderização no terminal, animações, teclado não bloqueante e interface ASCII.
 
 ---
 
-## Sobre o Projeto
+## 📌 **Sobre o Projeto**
 
-**Lógica, Lógica e Mais Lógica** é um jogo acadêmico desenvolvido em linguagem **C**, utilizando a biblioteca `cli-lib`, que permite criar experiências de jogo diretamente no terminal Linux.
-O objetivo é incentivar o pensamento estruturado por meio de uma jogabilidade leve, divertida e totalmente textual.
+**Lógica, Lógica e Mais Lógica** é um jogo textual que combina exploração, narrativa e desafios de lógica.
+O jogador progride resolvendo:
 
-Ele combina exploração de mapas, narrativa interativa e desafios lógicos, incluindo:
-
-* perguntas de lógica,
 * charadas,
+* perguntas de lógica,
 * enigmas,
-* batalhas baseadas em raciocínio,
-* coleta de itens e feitiços.
+* batalhas estratégicas,
+* interações com itens e feitiços.
+
+A proposta é transformar conceitos de lógica em uma dinâmica divertida e envolvente.
 
 ---
 
-## Características do Jogo
+## ⭐ **Características do Jogo**
 
-* Criado em **C puro**
-* Usa a biblioteca **cli-lib** (renderização, teclado, animações, cursor, cores)
-* Possui **Makefile** para build automatizado
-* Utiliza arquivo **ranking.txt** para pontuações persistentes
-* Mapas interativos com múltiplas fases
+* Desenvolvido em **C puro**
+* Usa a biblioteca **cli-lib** (tela, teclado, animação, cores)
+* **Makefile** para build automatizado
+* Arquivo **`ranking.txt`** para pontuações persistentes
+* Mapas interativos e narrativas diferentes
 * Questões aleatórias e desafios lógicos
-* Controles em tempo real via teclado
-* Cores e elementos gráficos via ANSI
-* Arquitetura modular (cada módulo em seu arquivo .c e .h)
-* Execução leve e rápida em qualquer terminal Linux/WSL
+* Interface colorida via ANSI
+* Estrutura modular (arquivos .c e .h separados)
 
 ---
 
-## Arquitetura do Código
+## 🧠 **Arquitetura do Código**
 
-O projeto está organizado em módulos, cada um responsável por uma parte específica da lógica do jogo.
+O código é organizado em módulos independentes, cada um responsável por uma parte do jogo.
 
-### Estrutura Geral do Projeto
+### 📁 Estrutura Geral
 
 ```
 cli-lib/
 │
-├── include/            # Arquivos .h (interfaces públicas)
-│   ├── historia.h
-│   ├── jogador.h
-│   ├── keyboard.h
-│   ├── mapa.h
-│   ├── menu.h
-│   ├── questoes.h
-│   ├── ranking.h
-│   ├── screen.h
-│   └── timer.h
+├── include/       # Headers (.h)
+│   historia.h  jogador.h  keyboard.h
+│   mapa.h      menu.h     questoes.h
+│   ranking.h   screen.h   timer.h
 │
-├── src/                # Implementações .c
-│   ├── historia.c
-│   ├── jogador.c
-│   ├── keyboard.c
-│   ├── mapa.c
-│   ├── menu.c
-│   ├── questoes.c
-│   ├── ranking.c
-│   ├── screen.c
-│   ├── timer.c
-│   └── main.c
+├── src/           # Código-fonte (.c)
+│   historia.c  jogador.c  keyboard.c
+│   mapa.c      menu.c     questoes.c
+│   ranking.c   screen.c   timer.c
+│   main.c
 │
-├── ranking.txt         # Arquivo persistente de pontuações
-├── Makefile            # Automação de build (gera obj/ e build/)
+├── ranking.txt    # Registro de pontuação
+├── Makefile       # Compilação automatizada
 └── README.md
 ```
 
----
+### 🧩 Principais Módulos
 
-### Descrição dos Principais Módulos
-
-#### **historia.c / historia.h**
-
-* Introdução animada
-* Narrativas e cutscenes
-* Finalização do jogo
-
-#### **jogador.c / jogador.h**
-
-* Status, inventário e feitiços
-* Funções de uso de itens
-* Progressão e atributos
-
-#### **keyboard.c / keyboard.h**
-
-* Input não bloqueante
-* Modo raw do terminal
-* Captura de teclas especiais
-
-#### **mapa.c / mapa.h**
-
-* Carregamento das fases
-* Renderização estruturada
-* Lógica de colisão e movimento
-
-#### **questoes.c / questoes.h**
-
-* Banco de perguntas
-* Seleção aleatória
-* Questões da vila, batalha e baús
-
-#### **ranking.c / ranking.h**
-
-* Leitura e escrita do ranking
-* Ordenação
-* Exibição no terminal
-
-> **O arquivo `ranking.txt` é usado para armazenar as pontuações dos jogadores**, sendo atualizado automaticamente a cada partida.
-
-#### **screen.c / screen.h** (parte central do cli-lib)
-
-* Controle do cursor
-* Animações
-* Desenho de quadros
-* Atualização de tela
-
-#### **timer.c / timer.h**
-
-* Simulação de delays e tempo de jogo
-
-#### **main.c**
-
-* Loop principal
-* Interações gerais
-* Combate lógico
-* Transição de fases
+* **historia.c** – introdução, narrativas e finalização
+* **jogador.c** – status, inventário e feitiços
+* **keyboard.c** – captura de teclado em tempo real
+* **mapa.c** – carregamento e renderização dos mapas
+* **questoes.c** – banco de perguntas e enigmas
+* **ranking.c** – leitura e gravação do ranking (`ranking.txt`)
+* **screen.c** – controle do cursor, cores e desenho da interface
+* **timer.c** – delays e temporização
+* **main.c** – loop principal, combate e fluxo do jogo
 
 ---
 
-## 🎯 | Como Jogar?
+## 🎯 **Como Jogar**
 
----
+### ▶️ Compilar
 
-### Controles
+### ▶️ Executar
 
-| Tecla              | Ação         |
-| ------------------ | ------------ |
-| **W / A / S / D**  | Movimentação |
-| **Enter / Espaço** | Interagir    |
-| **ESC**            | Sair         |
+### 🎮 Controles
 
----
+| Tecla              | Função     |
+| ------------------ | ---------- |
+| **W / A / S / D**  | Movimentar |
+| **Enter / Espaço** | Interagir  |
+| **ESC**            | Sair       |
 
-### Objetivo do Jogo
+### 🎯 Objetivo
 
-* Explorar mapas temáticos
-* Resolver questões de lógica
-* Superar desafios interativos
+* Explorar mapas
+* Resolver desafios lógicos
 * Coletar itens e feitiços
-* Enfrentar o mestre final
-* Registrar sua pontuação no arquivo **ranking.txt**
+* Enfrentar inimigos
+* Finalizar a aventura
+* Registrar seu score no **ranking.txt**
 
 ---
 
-## 👥 | Equipe
+## 👥 **Equipe**
 
 * **Aline de Albuquerque Henriques** — @aline-henriques
 * **Eduardo Borges** — @Eduardo-Borges18
@@ -171,7 +110,7 @@ cli-lib/
 
 ---
 
-## ©️ | Licença MIT
+## © **Licença MIT**
 
-Software distribuído sob a licença MIT.
+Software distribuído sob a Licença MIT.
 © Todos os direitos reservados aos autores.
