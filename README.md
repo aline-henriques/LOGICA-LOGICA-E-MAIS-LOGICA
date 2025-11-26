@@ -75,10 +75,34 @@ cli-lib/
 ---
 
 ## 🎯 **Como Jogar**
+O jogo Lógica, Lógica e Mais Lógica é executado via terminal (CLI). 
+Siga as instruções abaixo para compilar e rodar em ambientes Linux ou macOS.
+
+### ▶️ Requisitos
+É necessário ter o GCC (GNU Compiler Collection) instalado no sistema.
 
 ### ▶️ Compilar
+Para compilar todos os módulos (main.c, mapa.c, historia.c, etc.) e a biblioteca CLI-lib simultaneamente, utilize o comando gcc. 
+Certifique-se de estar no diretório raiz do projeto (/cli-lib/).
 
-### ▶️ Executar
+bash
+gcc src/*.c -I./include -o jogo
+
+▶️ Executar
+Após a compilação bem-sucedida, execute o binário gerado na mesma pasta:
+
+bash
+./jogo
+
+🎮 Regras Básicas
+
+Movimentação: Use W, A, S, D no teclado.
+
+Inventário: Pressione E para abrir a mochila.
+
+Progresso: O jogo avança por fases (Vila -> Floresta -> Masmorra). A saída de cada fase está marcada pelo símbolo >.
+
+Combate: Use o menu para escolher entre ATACAR (ataque básico) ou MAGIA. O dano depende da sua capacidade de resolver os quizzes lógicos rapidamente.
 
 ### 🎮 Controles
 
