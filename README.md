@@ -101,13 +101,13 @@ cli-lib/
 
 ## 👥 **Equipe**
 
-* **Aline de Albuquerque Henriques** — @aline-henriques
-* **Eduardo Borges** — @Eduardo-Borges18
-* **Gabriel Leal** — @Lealgbm
-* **Luiz Rocha** — @Luizrocha0
-* **Ricardo Severiano de Souza Filho** — @byteric
-* **Sérgio Chousinho** — @sergiochou
-
+- **Aline de Albuquerque Henriques** — A Arquiteta do Mundo (Mapa, Colisão e Renderização) @aline-henriques 
+- **Eduardo Borges** — O Narrador (História, Áudio e Boss) @Eduardo-Borges18
+- **Gabriel Leal** — O Guardião dos Dados (Ranking, Menus e Arquivos) @Lealgbm
+- **Luiz Rocha** — O Estrategista Lógico (Máquina de Estados e Quiz) @Luizrocha0
+- **Ricardo Severiano de Souza Filho** — O Engenheiro do Tempo e do Loop (Engine) @byteric
+- **Sérgio Chousinho** — O Mestre das Artes Marciais (Visual de Combate e Entidades) @sergiochou
+  
 ---
 
 ## © **Licença MIT**
